@@ -1,12 +1,25 @@
 #include "creature.h"
 
-int Creature::takeDamage(int damageTaken) {
-    health = health - damageTaken;
+void Creature::takeDamage(int dt, std::string e) {
+    health = health - dt;
+    if(effect != "NULL"){
+	if(effects.empty()){
+            effects[e] = 0;
+	} else{
+        effects[e] = effects.size() + 1;
+	}
+    }
 }
 
-int Creature::attack(int id, int damageGiven) {
+void Creature::attack(int id, int damageGiven) {
     ////TODO: finish code and concept for creatureID
     // maybe a dictionary?
+}
+
+bool Creature::eachTurn(){
+   // insert creature logic here idk?
+   return true;
+   // something that affects each turn.
 }
 
 void Creature::setHealth(int h) {

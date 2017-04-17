@@ -1,13 +1,17 @@
 #ifndef CREATURE_H
 #define CREATURE_H
 #include <string>
+#include <map>
 
 class Creature {
 public:
     //BASIC FUCTIONS
-    int takeDamage(int damageTaken = 413);
-    int restoreHP(int h);
-    int attack(int id = NULL, int damageGiven = 413);
+    void takeDamage(int damageTaken = 48);
+    void restoreHP(int h);
+
+    //NESSESARY OVERRIDE FUNCTIONS
+    virtual int attack(int id = -413, int damageGiven = 612);
+    virtual bool eachTurn();
 
     //SETTERS AND GETTERS WEW
     void setHealth(int h = 100);
@@ -23,6 +27,7 @@ public:
     int getID() const; ////TODO: IMPLEMENT ID FUNCTION.
 
 protected:
+    std::map <std::string, int> effectDuration;
     int health;
     int armor;
     int energy;
