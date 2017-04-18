@@ -2,11 +2,11 @@
 
 void Creature::takeDamage(int dt, std::string e) {
     health = health - dt;
-    if(effect != "NULL"){
+    if(e != "NULL"){
 	if(effects.empty()){
             effects[e] = 0;
 	} else{
-        effects[e] = effects.size() + 1;
+            effects[e] = effects.size() + 1;
 	}
     }
 }
@@ -14,6 +14,8 @@ void Creature::takeDamage(int dt, std::string e) {
 void Creature::attack(int id, int damageGiven) {
     ////TODO: finish code and concept for creatureID
     // maybe a dictionary?
+    effects.find();
+        
 }
 
 bool Creature::eachTurn(){
