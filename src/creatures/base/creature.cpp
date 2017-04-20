@@ -11,10 +11,10 @@ void Creature::takeDamage(int dt, std::string e) {
     }
 }
 
-void Creature::attack(int id, int damageGiven) {
+void Creature::attack(int id, int d) {
     ////TODO: finish code and concept for creatureID
     // maybe a dictionary?
-    effects.find();
+   // effects.find();
         
 }
 

@@ -1,4 +1,8 @@
 #include "magicCreature.h"
+/*
+void MagicCreature::attack(int id = -413, int d = 612){
+    
+}*/
 
 void MagicCreature::restoreHPwithMP(int h) {
     health += h;

@@ -6,11 +6,11 @@
 class Creature {
 public:
     //BASIC FUCTIONS
-    void takeDamage(int damageTaken = 48);
+    void takeDamage(int damageTaken = 48, std::string = "NULL");
     void restoreHP(int h);
 
     //NESSESARY OVERRIDE FUNCTIONS
-    virtual int attack(int id = -413, int damageGiven = 612);
+    virtual void attack(int id = -413, int d = 612);
     virtual bool eachTurn();
 
     //SETTERS AND GETTERS WEW
@@ -27,7 +27,7 @@ public:
     int getID() const; ////TODO: IMPLEMENT ID FUNCTION.
 
 protected:
-    std::map <std::string, int> effectDuration;
+    std::map <std::string, int> effects;
     int health;
     int armor;
     int energy;

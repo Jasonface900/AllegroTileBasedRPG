@@ -1,4 +1,7 @@
 # C and C++
+
+*.dep.inc
+
 *.d
 
 *.slo
@@ -25,6 +28,6 @@
 *.out
 *.app
 
-nbproj/
+nbproject/
 [Dd]ebug/
 [Rr]elease/

@@ -5,6 +5,7 @@
 
 class MagicCreature: public Creature {
 public:
+    //BASIC MAGIC FUNCTIONS
     void restoreHPwithMP(int h);
     
     void setMana(int m = 5);
