@@ -15,3 +15,4 @@ protected:
     int radiationExposure;
     int timeSinceLastExposure;
 };
+#endif /* IRRADIATEDCREATURE_H */
