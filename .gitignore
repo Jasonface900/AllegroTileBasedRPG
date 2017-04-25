@@ -28,6 +28,8 @@
 *.out
 *.app
 
+*.db
+
 nbproject/
 [Dd]ebug/
 [Rr]elease/
