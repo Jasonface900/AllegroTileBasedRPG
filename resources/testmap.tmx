@@ -10,67 +10,42 @@
    <terrain name="Cliff" tile="102"/>
    <terrain name="Clifftop" tile="38"/>
    <terrain name="Flattened Clifftop" tile="38"/>
+   <terrain name="Cliff Bottom" tile="134"/>
+   <terrain name="CaveEntrance" tile="193"/>
   </terraintypes>
   <tile id="5" terrain="3,3,3,5"/>
   <tile id="6" terrain="3,3,5,5"/>
   <tile id="7" terrain="3,3,5,3"/>
-  <tile id="8" terrain="3,5,5,5"/>
-  <tile id="9" terrain="5,3,5,5"/>
-  <tile id="10" terrain="5,3,5,3"/>
-  <tile id="11" terrain="3,5,3,5"/>
+  <tile id="8" terrain="3,5,5,5" probability="0.05"/>
+  <tile id="9" terrain="5,3,5,5" probability="0.05"/>
   <tile id="37" terrain="3,5,3,5"/>
   <tile id="38" terrain="5,5,5,5"/>
   <tile id="39" terrain="5,3,5,3"/>
-  <tile id="40" terrain="5,5,4,5"/>
-  <tile id="41" terrain="5,5,5,4"/>
-  <tile id="42" terrain="5,3,4,3"/>
-  <tile id="43" terrain="3,5,3,4"/>
+  <tile id="40" terrain="5,5,4,5" probability="0.05"/>
+  <tile id="41" terrain="5,5,5,4" probability="0.05"/>
   <tile id="69" terrain="3,5,3,4"/>
   <tile id="70" terrain="5,5,4,4"/>
   <tile id="71" terrain="5,3,4,3"/>
-  <tile id="72" terrain="4,5,4,5"/>
-  <tile id="73" terrain="5,4,5,4"/>
-  <tile id="74" terrain="4,3,4,3"/>
-  <tile id="75" terrain="3,4,3,4"/>
-  <tile id="101" terrain="3,4,3,4"/>
-  <tile id="102" terrain="4,4,4,4"/>
-  <tile id="103" terrain="4,3,4,3"/>
-  <tile id="104" terrain="4,5,3,5"/>
-  <tile id="105" terrain="5,4,5,3"/>
-  <tile id="106" terrain="4,3,3,3"/>
-  <tile id="107" terrain="3,4,3,3"/>
-  <tile id="131" terrain="3,3,5,5"/>
-  <tile id="132" terrain="3,3,5,5"/>
-  <tile id="133" terrain="3,4,3,3"/>
-  <tile id="134" terrain="4,4,3,3"/>
-  <tile id="135" terrain="4,3,3,3"/>
-  <tile id="163" terrain="3,5,3,4"/>
-  <tile id="164" terrain="5,5,4,4"/>
-  <tile id="165" terrain="5,5,5,5"/>
-  <tile id="166" terrain="5,5,5,5"/>
-  <tile id="167" terrain="5,5,4,4"/>
-  <tile id="168" terrain="5,3,4,3"/>
+  <tile id="72" terrain="4,5,7,5" probability="0.05"/>
+  <tile id="73" terrain="5,4,5,7" probability="0.05"/>
+  <tile id="101" terrain="3,4,3,7"/>
+  <tile id="102" terrain="4,4,7,7"/>
+  <tile id="103" terrain="4,3,7,3"/>
+  <tile id="104" terrain="7,5,3,5" probability="0.05"/>
+  <tile id="105" terrain="5,7,5,3" probability="0.05"/>
+  <tile id="133" terrain="3,7,3,3"/>
+  <tile id="134" terrain="7,7,3,3"/>
+  <tile id="135" terrain="7,3,3,3"/>
+  <tile id="136" terrain="3,3,3,3"/>
+  <tile id="161" terrain="5,5,4,8" probability="0.01"/>
+  <tile id="162" terrain="5,5,8,4" probability="0.01"/>
   <tile id="181" terrain="1,1,1,1" probability="0.5"/>
   <tile id="182" terrain="1,1,1,1" probability="0.5"/>
   <tile id="183" terrain="1,1,1,1" probability="0.5"/>
-  <tile id="195" terrain="3,4,3,4"/>
-  <tile id="196" terrain="4,4,4,5"/>
-  <tile id="197" terrain="5,4,4,4"/>
-  <tile id="198" terrain="4,5,4,4"/>
-  <tile id="199" terrain="4,4,5,4"/>
-  <tile id="200" terrain="4,3,4,3"/>
-  <tile id="227" terrain="5,5,5,5"/>
-  <tile id="228" terrain="5,4,4,4"/>
-  <tile id="229" terrain="4,4,4,4"/>
-  <tile id="230" terrain="4,4,4,4"/>
-  <tile id="231" terrain="4,5,4,4"/>
-  <tile id="232" terrain="5,5,5,5"/>
-  <tile id="259" terrain="5,4,3,3"/>
-  <tile id="260" terrain="4,4,3,3"/>
-  <tile id="261" terrain="4,4,3,3"/>
-  <tile id="262" terrain="4,4,3,3"/>
-  <tile id="263" terrain="4,4,3,3"/>
-  <tile id="264" terrain="4,5,3,3"/>
+  <tile id="193" terrain="4,8,7,8" probability="0.01"/>
+  <tile id="194" terrain="8,4,8,7" probability="0.01"/>
+  <tile id="225" terrain="7,8,3,3" probability="0.01"/>
+  <tile id="226" terrain="8,7,3,3" probability="0.01"/>
   <tile id="292" terrain="2,2,2,0"/>
   <tile id="293" terrain="2,2,0,2"/>
   <tile id="294" terrain="1,1,1,1" probability="0.01"/>
@@ -151,9 +126,14 @@
    eJztmmF20zoQhaOjlcR2SlgIPLMPeA/2AaTsAx6wASd/27SJu6unOdE9up7ITtrzihTQj3ucOKpjfbmjGY17bWaz62fWW6d3Tq+dbpw+TWhLr28j5z6NXEOPES2cvjn96/Tg1Dvd++PDL5j3/6WPJ5iBlWZwq46n2PNY0We6h73TnX+980ew3Jlfz+Sx/LZnzF9/vh15fYqlfCbeg+/ATXgtnX54vSSuiBHR3xkwG/Mf5h2Lt1N+mopb+BfvPxO7HXH76dTNZrON03diyPf4KjOOX52uInMHj9sRNjeK35T/eBy8d0/shNvaMWvs4Sj8hOPKc46tMa8yY/hNaYqpZhPjuFV/x/lC2Imveqcv5sBq7tgt7IHdRnlw7DfOieEppnz/sXwyFfPwHNY6rGvCsXX6YA7sOu+7ml6v/NiYB+U7OQ/lLOZ5NcFrq443NMedZ4Z1r/evNUPE8D/u3BvPe8yDl8LvVLyP+RTe25ngv2sT/CdHWeMQx2vit/JjZZzk4Ne/Cb+YwEGzFXa9H6PrYjDcE78N5ZGVCXkG8buIXD/13GNamlCLTekl/c29Z4T9RE9c915j34UcrP2H6300wcup2ZzDDfPpSHM7nGPncyQ47r1XsGfo6TjGTiTea+zwuh3lX/kNvnp2U9dJLfZBZQOvyg7Xps6f41oNHLU370zY2079Vvr6uo5OzeZcdlh/UIt1Ix7kOk3O/2WG818rpsIAcc3c8DvM7fG1dRznwAhzibETZlIzfCAP1uQ9zZJrjY1izJ/JdZkl+61WYzv1G6CGSc2P/aVjDefxGXzRzY59qOMLPmlsOKfzgB67pte1qptxfm4Du9S+E30xwQuYy0LlA61uduyJhrg2dsiy8ue0H/FdmlPs+3kdXCXkFeMn9/TCHHuI4w1M5nboHe05nKvs0Fe1HXqNx43ln4rY8ncLP+xZcuDHMRiLMZ4j8gh4ymcQc0WsNeSpBcVyrXIRrg1GjTqyX3PJG6LW6b0JuQFz1/6Cf5ALOXZrO3zdqfPwb2OH1+b3EGK9UmNxL7z3zcF/miMEnvCZ9uSCPMccGuUpzUDqGTDmvt6artnYsHbM7TA+0HfR++bc1BJD9oeuR3hdY+9q5nPFjGMe9YiOA1wHcc41S87sIOQWzKWxQ+/oPLwhDmDB66Gud7AOck7l79S/h4zpTdgLYv+cmtO5MR1joucaq4c55+j8pHvK4Md7DuRhxO418Vuay9jHxTwJDnodhKc0L/Yrf4acixq9jnDmmpmfC7cmn1r6sZ6MrVVcg3D+4XWS8wmvexznrMoG7/UmPEuX91P9r1y1NCE+ubfOXHTPnWsc9iGve2N1KNcs6IHx8/Oc6phzhD0f14M6T+t+A69niHFwWZoQt3qPwrmFn8/dm/C/CJeQi1mtOc4rWm/M8NkFcsALz6mh3gvYLeyxX7lmASt+RnJp7B7LGetaZY/jUu8rMJZjHHtd7Df2pEuL26eIn/90FMvYayB/wK9cK+P8gwmxmno+Kfhx7tD1zEqN5R4V1ro/kRsz0T0Z3YuScUsTnrFgzUO8pp5Dan7c2+O1kHve3OvGPg35IZdeVUp+6Elx/cL9Wc67/Hz3T2bH/OBB3pvo9RB1DfeX+wzmkFKtOdQl/H9odaQ/ynsXxO/SXFZv4LnEPZXYs7iKuHaz0IsR9pfUG3guCYf3JvQJEMPcW+a9R07PJ3NTa0IPkftXYzVh0bE4p3DfobHFe+fy42d1+tla6vvLXa0JayH+Jwl1X+p7uyRxf6use49Xa0LPqsTu0yQerErsPlmtCX2+1PdSVFRUVFRUVFRUVFRUVFRUBP0HXkg6xQ==
   </data>
  </layer>
- <layer name="Tile Layer 2" width="80" height="60">
+ <layer name="Fixes" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztmAty0zAQhteeafo8R9MC5wBSOAcllGOQgfC4BW3TDpdoQtoGrkGTApdAO9odrxU5cYe0ku3NzDd2ojTIH7+0kvoA0I+UXuLnwjBMwvcvZobkqozf0H2Nkd4dMoZ5HKnHHL78uWO4aHxrJjMHy9zIz4dJuXHfFEaOs16S/8yF3R2a784i6H9ofDXX58vNpo7hxT4vPA7l2B1RBqcR9DlmZO54zPK1ye6mDrLNnRMl0tuUXIZ+lof2xhliD7IOlFkPyt9Y9L0fafjnXaW3Q/HMMwF7XFQTivZ48urzVxeHnBmZNTc/vv2FW3MXOa1z/qTHjuG0oH2YzNdfdlu0LnQ9c+7q6I95ZBgUtLl5cscrezxP53NYB29lnuEAbBZvDfuGSZo5OE/9OfOtpUfk7Jvhj+CvYS8CF//jj5+J8/aMODbcQFZTOobfaT5jRfsQbt81f9Omv2NfbchTVX/s8GdqvfXJF697uebyPWZwQF6PKY+/DCfox7BluKLvYNu2YYfaTsnV55r5Q9DfAWRrNblvkPdu+5Xw+Cm14O+MDZvkb5fa0OGX1NKmz/CK/2/PI3CwCuTaj9fNrsOp08Yeecxfgh3nmMs98ndCntAzu2OPbwwfInj2VTqU97wOlLnzIb12yNcZ+cOxi7nkGiTH7nYEz3xfGUQvOBavYf48QGbUnScxjziPToQ/zNmaqSddsNnkubDqc18ZeG509ybXwuFYvGdeGJ6AzRzWlg3DV8gyWKe5r2w2xx6v6ArH5iXk84j5+w607gE7Vt+CzSC+r9vcV4au8/4asuy59Qb9vSJ/mDeZQazbjyN4nhDIswXMHGfPrdOvIZ83rMOcwfWkedmTyDPVw4LrxNACuxbkeoEZfGfoRfAMIcFaupHY63uw93htJRa8P4Js//aR1nuYQT7TafK5vgvOay3PdROyWrsP+fOcpp3pLwOzhus53PNuCXe8/uuCrdnsTfM3z5nhKfj3GTvkj787u4d/vw7wmgXnOtxr8F4Ovd7Qd3TsLvbHZ10DcoZrmZeQ3zOH7mfMrCUZuNY7iqBPVQLXeFyD1+k+dJ+qBJ4F4v6Mz1/qdk71kOBet0nnLKtmo+F7XUVRFEVRFEVRiuFX6H5UHZ9HWNKu5F+h+1I1XGdlHErX6ly5K/IVui9KcwDnHlb4201D/SmKolSXfw8FBDY=
+   eJzt1EENADAIADHcTsps80HAMn7QJmfhIgAAAAAAYK9T8edWwBy+2PP6Re8EAAAAAAAAAAAAALZL6IwEQA==
+  </data>
+ </layer>
+ <layer name="Cliff" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1ttNAzEQheGRH7gVQhIKgUAhECgEshtoAjqBTqARxopHzDorLg/EXvl/+ORIuyuNjzyedCLSAQAAAAAANORAHTpHFdQ0BZbbseqDyEzXja5z96y1LP9ylk5lm5l5TBmepEztd0s5+kyewtf+x/L071p2pgvDdV7B3vbhXF04i5RHH4bnyfp29gt9aCe/a3WTiMvTcszF+870Yff5Wfp+WcHe9uFePSTi8ryUbT9vwvBc+f7tRvK7St+vKthbyTxvs8zGsorZ2j1o6136fl3BXkqyWRFziz25kN0zONa7rfTtT/xcWaY8v8su5hx7t9W+zfm5spLhfxebEc/qJcu59b41fq6sU342S2xGvKq3LOfSddfK96/NiHf1keVcus5a5fdh6XqmJr8PS9czNfl9WLoeAAAAAAAAAAAAAAAAAAD+2yeWCM/7
   </data>
  </layer>
 </map>
