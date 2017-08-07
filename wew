@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+struct TMXmap{
+    std::string version;
+    std::string orientation;
+    std::string render_order;
+    int width_in_tiles;
+    int height_in_tiles;
+    int width_per_tile;
+    int height_per_tile;
+    std::string background_color;
+} test_tiled_map;
+
+int main() {
+	test_tiled_map.version = "1.18.1889";
+	test_tiled_map.orientation = "orthogonal";
+	test_tiled_map.render_order = "right-down";
+	test_tiled_map.width_in_tiles = 80;
+	test_tiled_map.height_in_tiles = 60;
+	test_tiled_map.width_per_tile = 32;
+	test_tiled_map.height_per_tile = 32;
+	test_tiled_map.background_color = "#FFFFFF";
+	
+	std::cout << test_tiled_map.version << std::endl;
+	std::cout << test_tiled_map.orientation << std::endl;
+	std::cout << test_tiled_map.render_order << std::endl;
+	std::cout << test_tiled_map.width_in_tiles << std::endl;
+	std::cout << test_tiled_map.height_in_tiles << std::endl;
+	std::cout << test_tiled_map.width_per_tile << std::endl;
+	std::cout << test_tiled_map.height_per_tile << std::endl;
+	std::cout << test_tiled_map.background_color << std::endl;
+	
+	return 0;
+}

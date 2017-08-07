@@ -5,13 +5,18 @@
 #ifndef CONVERT_TMX
 #define CONVERT_TMX
 
+class convert_tmx{
+public:
+	struct TMXMap {
+		std::string version;
+		std::string orientation;
+		std::string render-order;
+		int width-in-tiles;
+		int height-in-tiles;
+		int tilewidth;
+		int tileheight;
+		std::string backgroundcolor;
+	};
+}
+
 #endif /* CONVERT_TMX */
-
-/*
-   └── utils
-        ├── convertTMX.cpp
-        └── TMXloader
-             └── convertTMX.cpp
-        └── convertTMX.cpp
-*/
-
